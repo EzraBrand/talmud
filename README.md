@@ -53,27 +53,6 @@ The tool standardizes terminology according to these preferences:
 
 You can add your own custom terminology preferences using the form in the notebook.
 
-## Running Locally
-
-To run the script locally:
-
-1. Clone this repository:
-   ```
-   git clone https://github.com/YourUsername/sefaria-formatter.git
-   ```
-
-2. Install required dependencies:
-   ```
-   pip install requests pandas
-   ```
-
-3. Run the script:
-   ```python
-   from sefaria_formatter import get_sefaria_text
-   
-   # Get a text with default formatting options
-   get_sefaria_text("Sotah.35a.7", language="all", remove_nikud_marks=True, standardize_terms=True)
-   ```
 
 ## API Reference
 
@@ -124,7 +103,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions, please open an issue or contact [your email/contact info].
+If you have any questions or suggestions, please open an issue or contact me at [ezrabrand@gmail.com].
 
 ---
 
