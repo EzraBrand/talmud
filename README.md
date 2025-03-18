@@ -5,6 +5,8 @@ A Python tool for retrieving Talmud from Sefaria with custom formatting options 
 ## Features
 
 - **Clean text formatting** for Google Docs and other word processors
+- **Split into lines** based on punctuation (period, colon, question mark, exclamation point [.:?!])
+- **Generate numbered section headers**
 - **Remove nikud** (Hebrew vowel marks) while preserving punctuation
 - **Standardize terminology** according to scholarly preferences
 - **Convert spelled-out numbers** to Arabic numerals for numbers above ten
