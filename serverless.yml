@@ -1,0 +1,29 @@
+service: chavrutai-api
+
+frameworkVersion: '^3.0.0'
+
+provider:
+  name: aws
+  runtime: python3.9
+  stage: ${opt:stage, 'prod'}
+  region: us-east-1
+  memorySize: 256
+  timeout: 30
+  
+  httpApi:
+    cors: true
+
+functions:
+  get_text:
+    handler: handler.get_text
+    events:
+      - httpApi:
+          path: /api/get_text
+          method: post
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
