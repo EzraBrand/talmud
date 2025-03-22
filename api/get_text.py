@@ -1,10 +1,8 @@
 from http.server import BaseHTTPRequestHandler
 import json
-import re
 import requests
-from word2number import w2n
-from api.utils.formatter import remove_nikud, standardize_terminology, split_by_punctuation
-from api.utils.sefaria_api import query_sefaria, get_adjacent_pages
+from utils.formatter import remove_nikud, standardize_terminology, split_by_punctuation
+from utils.sefaria_api import query_sefaria, get_adjacent_pages
 
 class handler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
