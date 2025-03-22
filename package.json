@@ -1,0 +1,23 @@
+{
+    "name": "chavrutai-api",
+    "version": "1.0.0",
+    "description": "Serverless API for ChavrutAI Sefaria formatter",
+    "main": "handler.py",
+    "scripts": {
+      "deploy": "serverless deploy"
+    },
+    "dependencies": {
+      "serverless": "^3.26.0",
+      "serverless-python-requirements": "^5.4.0"
+    },
+    "devDependencies": {},
+    "keywords": [
+      "serverless",
+      "aws",
+      "lambda",
+      "sefaria",
+      "talmud"
+    ],
+    "author": "Ezra Brand",
+    "license": "MIT"
+  }
