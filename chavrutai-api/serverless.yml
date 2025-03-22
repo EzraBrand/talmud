@@ -1,6 +1,6 @@
 service: chavrutai-api
 
-frameworkVersion: '3'
+frameworkVersion: '3.26.0'
 
 provider:
   name: aws
