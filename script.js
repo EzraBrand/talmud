@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const adjacentPagesInput = document.getElementById('adjacentPages');
 
     // API URL - replace with your serverless function URL when deployed
-    const API_URL = 'https://your-serverless-api-url.com/api/get_text';
+    const API_URL = '/api/get_text';
     
     // Toggle adjacent pages input based on checkbox
     includeAdjacentCheckbox.addEventListener('change', function() {
