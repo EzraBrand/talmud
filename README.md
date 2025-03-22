@@ -14,48 +14,7 @@ A web application for retrieving Talmud from Sefaria with custom formatting opti
 
 ## Usage
 
-Visit [https://chavrutai.com](https://chavrutai.com) to use the application online.
-
-## Local Development
-
-### Prerequisites
-- Docker and Docker Compose
-- Python 3.9 or higher (if running without Docker)
-
-### Running with Docker
-1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/chavrutai-app.git
-   cd chavrutai-app
-   ```
-
-2. Build and run the application with Docker Compose:
-   ```
-   docker-compose up --build
-   ```
-
-3. Access the application at [http://localhost:8080](http://localhost:8080)
-
-### Running without Docker
-1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/chavrutai-app.git
-   cd chavrutai-app
-   ```
-
-2. Create a virtual environment and install dependencies:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-
-3. Run the Flask application:
-   ```
-   flask run
-   ```
-
-4. Access the application at [http://localhost:5000](http://localhost:5000)
+Visit [https://chavrutai.com](https://chavrutai.com) to use the application online. (Work in progress, currently only placeholder)
 
 ## Terminology Preferences
 
