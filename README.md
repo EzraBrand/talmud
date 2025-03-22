@@ -1,6 +1,6 @@
-# Sefaria Talmud Text Formatter
+# ChavrutAI - Sefaria Text Formatter
 
-A Python tool for retrieving Talmud from Sefaria with custom formatting options for scholarly and educational use. This tool helps you quickly access Talmud text and format it for seamless integration into documents, presentations, and study materials.
+A web application for retrieving Talmud from Sefaria with custom formatting options for scholarly and educational use. This tool helps you quickly access Talmud text and format it for seamless integration into documents, presentations, and study materials.
 
 ## Features
 
@@ -10,20 +10,52 @@ A Python tool for retrieving Talmud from Sefaria with custom formatting options 
 - **Remove nikud** (Hebrew vowel marks) while preserving punctuation
 - **Standardize terminology** according to scholarly preferences
 - **Convert spelled-out numbers** to Arabic numerals for numbers above ten
-- **GUI interface** via Google Colab notebook
 - **Copy-paste ready output** with consistent font styling
 
 ## Usage
 
-The easiest way to use this tool is through the Google Colab notebook:
+Visit [https://chavrutai.com](https://chavrutai.com) to use the application online.
 
-1. Open the [Sefaria Text Formatter Notebook](https://github.com/EzraBrand/talmud/blob/main/Custom_Formatter_of_Sefaria_Talmud_Text_Via_API.ipynb)
-2. Run each cell in sequence
-3. Use the form to enter a reference (e.g., "Sotah.35a")
-4. Select your preferred options
-5. Click "Get Text" to retrieve the formatted text
-6. Copy and paste the result directly into your document
+## Local Development
 
+### Prerequisites
+- Docker and Docker Compose
+- Python 3.9 or higher (if running without Docker)
+
+### Running with Docker
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/chavrutai-app.git
+   cd chavrutai-app
+   ```
+
+2. Build and run the application with Docker Compose:
+   ```
+   docker-compose up --build
+   ```
+
+3. Access the application at [http://localhost:8080](http://localhost:8080)
+
+### Running without Docker
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/chavrutai-app.git
+   cd chavrutai-app
+   ```
+
+2. Create a virtual environment and install dependencies:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. Run the Flask application:
+   ```
+   flask run
+   ```
+
+4. Access the application at [http://localhost:5000](http://localhost:5000)
 
 ## Terminology Preferences
 
@@ -37,7 +69,7 @@ The tool standardizes terminology according to these preferences:
 | Divine Voice | bat kol |
 | Divine Presence | Shekhina |
 | divine inspiration | Holy Spirit |
-| the Lord | God |
+| the Lord | YHWH |
 | leper | metzora |
 | leprosy | tzara'at |
 | phylacteries | tefillin |
@@ -46,25 +78,24 @@ The tool standardizes terminology according to these preferences:
 | maidservant | female slave |
 | barrel | jug |
 
-You can customize for your own custom terminology preferences in the notebook.
+You can customize the terminology preferences in `utils/formatter.py`.
 
-## Customization
+## Deployment
 
-The script can be customized in several ways:
+The application can be deployed to various platforms:
 
-1. **Terminology Preferences**: Edit the `TERMINOLOGY_PREFERENCES` dictionary
-2. **Number Formatting**: Modify the `NUMBER_PATTERNS` dictionary
-3. **Font and Styling**: Adjust the HTML formatting in `display_sefaria_text()`
+### GitHub Pages (Static Frontend Only)
+If you want to deploy just the frontend and have the API hosted elsewhere:
 
-## Project Background
+1. Create a static version of the frontend
+2. Deploy to GitHub Pages
 
-This tool was created to solve the practical challenge of working with Sefaria texts in academic and educational contexts. It streamlines the process of retrieving, formatting, and preparing Jewish texts for documents, presentations, and study materials.
-
-For more details, check out my upcoming blogpost at [my blog](https://www.ezrabrand.com/) explaining the development process and use cases.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Cloud Platforms
+The Docker container can be deployed to:
+- Google Cloud Run
+- AWS Elastic Container Service
+- Azure Container Instances
+- Heroku
 
 ## License
 
@@ -73,11 +104,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 - [Sefaria](https://www.sefaria.org/) for their incredible digital library and API
-- [Google Colab](https://colab.research.google.com/) for making interactive Python notebooks accessible
-
-## Contact
-
-If you have any questions or suggestions, please open an issue or contact me at [ezrabrand@gmail.com].
 
 ---
 
