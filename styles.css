@@ -1,0 +1,101 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header styling */
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header.bg-primary {
+    color: white;
+}
+
+/* Results styling */
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #0d6efd;
+}
+
+.text-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+}
+
+.hebrew-text {
+    font-family: 'Times New Roman', serif;
+    text-align: right;
+    direction: rtl;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.english-text {
+    font-family: 'Calibri', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Loading spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Copy button styling */
+.copy-btn {
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.copy-btn:hover {
+    background-color: #e9ecef;
+}
+
+/* API error message */
+.api-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.1rem;
+    }
+    
+    .hebrew-text, .english-text {
+        font-size: 0.95rem;
+    }
+}
