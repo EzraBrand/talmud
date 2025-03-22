@@ -14,7 +14,9 @@ A web application for retrieving Talmud from Sefaria with custom formatting opti
 
 ## Usage
 
-Visit [https://chavrutai.com](https://chavrutai.com) to use the application online. (Work in progress, currently only placeholder)
+Visit [https://talmud-5qrsldze9-ezrabrands-projects.vercel.app/](https://talmud-5qrsldze9-ezrabrands-projects.vercel.app/)  to use the alpha version of the web app. 
+
+Placeholder for the future web app: [https://chavrutai.com](https://chavrutai.com)
 
 ## Terminology Preferences
 
