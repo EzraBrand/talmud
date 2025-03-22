@@ -39,23 +39,6 @@ The tool standardizes terminology according to these preferences:
 
 You can customize the terminology preferences in `utils/formatter.py`.
 
-## Deployment
-
-The application can be deployed to various platforms:
-
-### GitHub Pages (Static Frontend Only)
-If you want to deploy just the frontend and have the API hosted elsewhere:
-
-1. Create a static version of the frontend
-2. Deploy to GitHub Pages
-
-### Cloud Platforms
-The Docker container can be deployed to:
-- Google Cloud Run
-- AWS Elastic Container Service
-- Azure Container Instances
-- Heroku
-
 ## License
 
 This project is licensed under the MIT License.
