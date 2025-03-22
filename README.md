@@ -16,7 +16,7 @@ A web application for retrieving Talmud from Sefaria with custom formatting opti
 
 Visit [https://talmud-5qrsldze9-ezrabrands-projects.vercel.app/](https://talmud-5qrsldze9-ezrabrands-projects.vercel.app/)  to use the alpha version of the web app. 
 
-Screenshot of current UX/UI (22-Mar-2025): 
+Screenshot of part of a sample output (22-Mar-2025): 
 <img width="784" alt="image" src="https://github.com/user-attachments/assets/d11b0702-f0ee-4b81-a3d3-79cc09d7f981" />
 
 
